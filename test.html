@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <b>Click the links below to simulate going to this page with a hash</b>
+    <hr>
+    <a href="#1">One</a><br />
+    <a href="#2">Two</a><br />
+    <a href="#3">Three</a><br />
+    <hr>
+    <p id="1">
+        First content
+    </p>
+    <br />
+    <p id="2">
+        Second content
+    </p>
+    <br />
+    <p id="3">
+        Third content
+    </p>
+    <p>
+        etcetera.
+
+    </p>
+
+    <script>
+        let a = document.querySelectorAll("p[id]");
+        window.onhashchange = () => {
+            a.forEach(function (e) {
+                if ("#" + e.getAttribute("id") != location.hash) {
+                    e.style.display = "none";
+                }
+                else {
+                    e.style.display = "contents";
+                }
+
+            })
+        }
+
+    </script>
+</body>

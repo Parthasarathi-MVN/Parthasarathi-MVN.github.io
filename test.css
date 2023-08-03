@@ -1,0 +1,15 @@
+div.ball {
+    background-color: rgba(201, 90, 90, 0.404);
+    background: radial-gradient(circle, rgba(201, 90, 90, 0.404) 0%, rgba(15, 15, 15, 0) 70%);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    /* pointer-events: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    mix-blend-mode: difference;
+
+}
