@@ -534,3 +534,10 @@ div.ball {
     mix-blend-mode: difference;
 
 }
+
+/* ------------ about me ------------ */
+.about-me-content {
+    width: 60%;
+    margin-bottom: 7rem;
+
+}
