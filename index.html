@@ -1,435 +1,481 @@
 <head>
+  <title>Parthasarathi</title>
+  <link rel="icon" href="assets/logo2.png" type="image/icon type" />
+  <link rel="script" href="./index.js" />
 
-    <title>Parthasarathi</title>
-    <link rel="icon" href="assets/logo2.png" type="image/icon type">
-    <link rel="script" href="./index.js">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/style.css" />
+  <!-- <script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js@1.5.5/t.min.js"></script> -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- greensock cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
-    <!-- <script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js@1.5.5/t.min.js"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- greensock cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
-
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
+<body class="theme">
+  <div class="fixed">
+    <button
+      class="dark"
+      id="button-id"
+      onclick="myFunction1(); myFunction();"
+    ></button>
+  </div>
 
+  <div class="frame">
+    <div class="wrapper">
+      <div class="ball ball-overflow"></div>
 
+      <nav class="theme">
+        <span id="brand">
+          <a href="">parth.me</a>
+        </span>
 
-<body>
+        <ul id="menu">
+          <li>
+            <a href="#experience">work<span>.</span></a>
+          </li>
+          <li>
+            <a href="#skills">skills<span>.</span></a>
+          </li>
+          <li>
+            <a href="#scroll">about me<span>.</span></a>
+          </li>
+          <li>
+            <a href="#footer">contact<span>.</span></a>
+          </li>
+          <li>
+            <input type="checkbox" id="checkbox" onclick="myFunction()" />
+          </li>
+        </ul>
 
-    <div class="frame">
+        <div id="toggle">
+          <div class="span">menu</div>
+        </div>
+      </nav>
 
-        <div class="wrapper ">
+      <div id="resize">
+        <div class="close-btn">close</div>
 
-            <div class="ball ball-overflow"></div>
+        <ul id="menu">
+          <li>
+            <a href="">home<span>.</span></a>
+          </li>
+          <li>
+            <a href="">work<span>.</span></a>
+          </li>
+          <li>
+            <a href="">about me<span>.</span></a>
+          </li>
+          <li>
+            <a href="">contact<span>.</span></a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="hero">
+        <div class="header">
+          <h1 class="line anim-typewriter">Hi, I'm Parthasarathi</h1>
+          <div class="wow fadeInUp">
+            <h3 class="tagline">
+              I make apps for the web that are made to impress
+            </h3>
+          </div>
+        </div>
+      </div>
 
-            <nav>
-                <span id="brand">
-                    <a href="">parth.me</a>
-                </span>
+      <div class="container1">
+        <a href="#scroll">
+          <div class="scroll-down"></div>
+        </a>
+      </div>
 
-                <ul id="menu">
-                    <li><a href="#experience">work<span>.</span></a></li>
-                    <li><a href="#skills">skills<span>.</span></a></li>
-                    <li><a href="#scroll">about me<span>.</span></a></li>
-                    <li><a href="#footer">contact<span>.</span></a></li>
-                </ul>
+      <br id="scroll" /><br /><br /><br />
+      <div>
+        <!-- ABOUT ME -->
+        <div id="about-me" class="container-fluid">
+          <h6>About Me</h6>
 
-                <div id="toggle">
-                    <div class="span">menu</div>
+          <div class="vertical"></div>
+          <br />
+          <div class="whitespace"></div>
+
+          <div class="container1 wow fadeInUp"></div>
+          <div class="container1 wow fadeInUp">
+            <p style="width: 60%; margin-bottom: 7rem">
+              I am a software engineer with a passion for building innovative
+              and user-friendly web applications. I have a strong understanding
+              of the full stack development process, from ideation to
+              deployment. I am also proficient in a variety of programming
+              languages and frameworks, including Java, Spring Boot, TypeScript,
+              Angular and much more.
+            </p>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div id="experience" class="container-fluid experience-content">
+          <h6>My Experience</h6>
+
+          <div class="vertical"></div>
+          <br />
+          <div class="whitespace"></div>
+
+          <div class="container1 wow fadeInUp">
+            <h2>
+              Company 1
+              <h6>July, 2022 - Present</h6>
+            </h2>
+          </div>
+          <div class="container1 wow fadeInUp">
+            <ul class="ul-class">
+              <li class="li-class">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aperiam sequi quas ducimus. Provident dolor voluptatibus
+                ratione. Vitae, dicta vero!
+              </li>
+              <li class="li-class">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, eligendi exercitationem tenetur dolorum fuga earum
+                aliquam dolores dolore quis optio.
+              </li>
+              <li class="li-class">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                magnam earum aut aliquam asperiores enim eos maiores et, facere
+                perferendis?
+              </li>
+              <li class="li-class">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+                minima tempora minus error, eos quos adipisci quia dicta ad
+                aspernatur.
+              </li>
+              <li class="li-class">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                maiores pariatur culpa odit accusantium odio tenetur voluptas
+                fugit rerum error.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div id="skills" class="container-fluid skills-content">
+          <br /><br /><br />
+
+          <h6>My Skills</h6>
+
+          <div class="vertical"></div>
+          <br />
+
+          <div class="whitespace"></div>
+
+          <div class="container1 wow fadeInUp">
+            <div class="chip-div">
+              <p class="chip wow fadeInUp">Java</p>
+              <p class="chip wow fadeInUp">Spring Boot</p>
+              <p class="chip wow fadeInUp">Spring Security</p>
+              <p class="chip wow fadeInUp">TypeScript</p>
+              <p class="chip wow fadeInUp">Angular</p>
+              <p class="chip wow fadeInUp">NgRx</p>
+              <p class="chip wow fadeInUp">RxJS</p>
+              <p class="chip wow fadeInUp">Angular Material</p>
+              <p class="chip wow fadeInUp">Docker</p>
+              <p class="chip wow fadeInUp">RDBMS</p>
+              <p class="chip wow fadeInUp">SQL</p>
+              <p class="chip wow fadeInUp">Maven</p>
+              <p class="chip wow fadeInUp">JUnit</p>
+              <p class="chip wow fadeInUp">Mockito</p>
+              <p class="chip wow fadeInUp">Jenkins</p>
+              <p class="chip wow fadeInUp">Hibernate</p>
+              <p class="chip wow fadeInUp">CSS</p>
+              <p class="chip wow fadeInUp">Microservices</p>
+              <p class="chip wow fadeInUp">Git</p>
+              <p class="chip wow fadeInUp">Postman</p>
+              <p class="chip wow fadeInUp">Python</p>
+              <p class="chip wow fadeInUp">MongoDB</p>
+              <p class="chip wow fadeInUp">HTML</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECTS  -->
+        <div id="projects" class="container-fluid">
+          <br /><br /><br />
+
+          <h6>My Projects</h6>
+
+          <div class="vertical"></div>
+          <br />
+
+          <div class="whitespace"></div>
+
+          <div class="container1 wow fadeInUp">
+            <h2>Project 1</h2>
+          </div>
+          <div class="container1 wow fadeInUp">
+            <ul class="ul-class">
+              <li class="li-class">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                repudiandae culpa amet ipsum ipsa minus fuga id a aut iusto.
+              </li>
+              <li class="li-class">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                pariatur repellendus magni deserunt impedit dicta ratione
+                maiores quaerat numquam saepe.
+              </li>
+              <li class="li-class">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                aspernatur, iste quasi molestias nihil quis voluptas soluta
+                alias atque. Quas?
+              </li>
+              <li class="li-class">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore possimus minus laudantium nostrum aliquid incidunt cum
+                a dolor explicabo. Rem!
+              </li>
+              <li class="li-class">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                consectetur mollitia eaque voluptas perferendis cumque vel
+                dignissimos ipsa, tenetur aliquam.
+              </li>
+            </ul>
+          </div>
+
+          <div class="container1 wow fadeInUp">
+            <h2>Project 2</h2>
+          </div>
+          <div class="container1 wow fadeInUp">
+            <ul class="ul-class">
+              <li class="li-class">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                repudiandae culpa amet ipsum ipsa minus fuga id a aut iusto.
+              </li>
+              <li class="li-class">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                pariatur repellendus magni deserunt impedit dicta ratione
+                maiores quaerat numquam saepe.
+              </li>
+              <li class="li-class">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                aspernatur, iste quasi molestias nihil quis voluptas soluta
+                alias atque. Quas?
+              </li>
+              <li class="li-class">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore possimus minus laudantium nostrum aliquid incidunt cum
+                a dolor explicabo. Rem!
+              </li>
+              <li class="li-class">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                consectetur mollitia eaque voluptas perferendis cumque vel
+                dignissimos ipsa, tenetur aliquam.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="footer" class="footer">
+          <div class="container">
+            <br /><br />
+
+            <div class="collab">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="wow fadeInUp">
+                    Got an interesting project? I can help you.
+                  </p>
                 </div>
-
-            </nav>
-
-
-
-
-
-            <div id="resize">
-                <div class="close-btn">close</div>
-
-                <ul id="menu">
-                    <li><a href="">home<span>.</span></a></li>
-                    <li><a href="">work<span>.</span></a></li>
-                    <li><a href="">about me<span>.</span></a></li>
-                    <li><a href="">contact<span>.</span></a></li>
-                </ul>
+              </div>
             </div>
 
-            <div class="hero">
-                <div class="header">
-                    <h1 class="line anim-typewriter">Hi, I'm Parthasarathi</h1>
-                    <div class="wow fadeInUp">
-                        <h3 class="tagline">I make apps for the web that are made to impress</h3>
+            <br />
 
-                    </div>
-                </div>
+            <div class="hr">
+              <div class="row"></div>
             </div>
 
-            <div class="container1">
-                <a href="#scroll">
-                    <div class="scroll-down">
-                    </div>
-                </a>
-            </div>
+            <br /><br />
 
-            <br id="scroll"><br><br><br>
-            <div>
-
-                <!-- ABOUT ME -->
-                <div id="about-me" class="container-fluid">
-
-                    <h6>About Me</h6>
-
-                    <div class="vertical"></div>
-                    <br>
-                    <div class="whitespace"></div>
-
-                    <div class="container1 wow fadeInUp">
-
-                    </div>
-                    <div class="container1 wow fadeInUp">
-                        <p style="width: 60%;margin-bottom: 7rem;">
-                            I am a software engineer with a passion for building innovative and user-friendly web
-                            applications. I have a strong understanding of the full stack development process, from
-                            ideation
-                            to deployment. I am also proficient in a variety of programming languages and frameworks,
-                            including Java, Spring Boot, TypeScript, Angular and much more.
-                        </p>
-                    </div>
-                </div>
-
-
-
-                <!-- EXPERIENCE -->
-                <div id="experience" class="container-fluid experience-content">
-
-                    <h6>My Experience</h6>
-
-                    <div class="vertical"></div>
-                    <br>
-                    <div class="whitespace"></div>
-
-                    <div class="container1 wow fadeInUp">
-                        <h2>Company 1<h6>July, 2022 - Present</h6>
-                        </h2>
-                    </div>
-                    <div class="container1 wow fadeInUp">
-                        <ul class="ul-class">
-                            <li class="li-class">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aperiam sequi quas
-                                ducimus.
-                                Provident dolor voluptatibus ratione. Vitae, dicta vero!
-                            </li>
-                            <li class="li-class">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eligendi
-                                exercitationem
-                                tenetur dolorum fuga earum aliquam dolores dolore quis optio.
-                            </li>
-                            <li class="li-class">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam earum aut aliquam
-                                asperiores enim eos maiores et, facere perferendis?
-
-                            </li>
-                            <li class="li-class">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius minima tempora minus
-                                error,
-                                eos
-                                quos adipisci quia dicta ad aspernatur.
-                            </li>
-                            <li class="li-class">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi maiores pariatur culpa
-                                odit
-                                accusantium odio tenetur voluptas fugit rerum error.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                <!-- SKILLS -->
-                <div id="skills" class="container-fluid skills-content">
-                    <br><br><br>
-
-                    <h6>My Skills</h6>
-
-                    <div class="vertical"></div>
-                    <br>
-
-
-                    <div class="whitespace"></div>
-
-
-
-                    <div class="container1 wow fadeInUp">
-                        <div class="chip-div">
-                            <p class="chip wow fadeInUp">Java</p>
-                            <p class="chip wow fadeInUp">Spring Boot</p>
-                            <p class="chip wow fadeInUp">Spring Security</p>
-                            <p class="chip wow fadeInUp">TypeScript</p>
-                            <p class="chip wow fadeInUp">Angular</p>
-                            <p class="chip wow fadeInUp">NgRx</p>
-                            <p class="chip wow fadeInUp">RxJS</p>
-                            <p class="chip wow fadeInUp">Angular Material</p>
-                            <p class="chip wow fadeInUp">Docker</p>
-                            <p class="chip wow fadeInUp">RDBMS</p>
-                            <p class="chip wow fadeInUp">SQL</p>
-                            <p class="chip wow fadeInUp">Maven</p>
-                            <p class="chip wow fadeInUp">JUnit</p>
-                            <p class="chip wow fadeInUp">Mockito</p>
-                            <p class="chip wow fadeInUp">Jenkins</p>
-                            <p class="chip wow fadeInUp">Hibernate</p>
-                            <p class="chip wow fadeInUp">CSS</p>
-                            <p class="chip wow fadeInUp">Microservices</p>
-                            <p class="chip wow fadeInUp">Git</p>
-                            <p class="chip wow fadeInUp">Postman</p>
-                            <p class="chip wow fadeInUp">Python</p>
-                            <p class="chip wow fadeInUp">MongoDB</p>
-                            <p class="chip wow fadeInUp">HTML</p>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- PROJECTS  -->
-                <div id="projects" class="container-fluid">
-                    <br><br><br>
-
-                    <h6>My Projects</h6>
-
-                    <div class="vertical"></div>
-                    <br>
-
-
-                    <div class="whitespace"></div>
-
-                    <div class="container1 wow fadeInUp">
-                        <h2>Project 1</h2>
-                    </div>
-                    <div class="container1 wow fadeInUp">
-                        <ul class="ul-class">
-                            <li class="li-class">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae culpa amet
-                                ipsum
-                                ipsa minus fuga id a aut iusto.
-                            </li>
-                            <li class="li-class">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur repellendus magni
-                                deserunt impedit dicta ratione maiores quaerat numquam saepe.
-                            </li>
-                            <li class="li-class">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam aspernatur, iste quasi
-                                molestias nihil quis voluptas soluta alias atque. Quas?
-                            </li>
-                            <li class="li-class">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore possimus minus
-                                laudantium nostrum aliquid incidunt cum a dolor explicabo. Rem!
-                            </li>
-                            <li class="li-class">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure consectetur mollitia
-                                eaque
-                                voluptas perferendis cumque vel dignissimos ipsa, tenetur aliquam.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="container1 wow fadeInUp">
-                        <h2>Project 2</h2>
-                    </div>
-                    <div class="container1 wow fadeInUp">
-                        <ul class="ul-class">
-                            <li class="li-class">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae culpa amet
-                                ipsum
-                                ipsa minus fuga id a aut iusto.
-                            </li>
-                            <li class="li-class">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur repellendus magni
-                                deserunt impedit dicta ratione maiores quaerat numquam saepe.
-                            </li>
-                            <li class="li-class">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam aspernatur, iste quasi
-                                molestias nihil quis voluptas soluta alias atque. Quas?
-                            </li>
-                            <li class="li-class">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore possimus minus
-                                laudantium nostrum aliquid incidunt cum a dolor explicabo. Rem!
-                            </li>
-                            <li class="li-class">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure consectetur mollitia
-                                eaque
-                                voluptas perferendis cumque vel dignissimos ipsa, tenetur aliquam.
-                            </li>
-                        </ul>
-                    </div>
-
-
-
-
-
-                </div>
-
-                <div id="footer" class="footer">
-                    <div class="container">
-                        <br><br>
-
-                        <div class="collab">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p class="wow fadeInUp">Got an interesting project? I can help you.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <br>
-
-                        <div class="hr">
-                            <div class="row"></div>
-                        </div>
-
-                        <br><br>
-
-                        <div class="info">
-                            <div class="row">
-                                <!-- <div class="col-lg-4" id="personal">
+            <div class="info">
+              <div class="row">
+                <!-- <div class="col-lg-4" id="personal">
                                 <p class="wow fadeInUp">connect with me</p>
                                 <h4 class="wow fadeInUp" data-wow-delay="0.2s">ig @ig_un</h4>
                                 <br><br>
                             </div> -->
 
-                                <div class="col-lg-2" id="media">
-                                    <p class="wow fadeInUp" data-wow-delay="0.2s">connect with me</p>
+                <div class="col-lg-2" id="media">
+                  <p class="wow fadeInUp" data-wow-delay="0.2s">
+                    connect with me
+                  </p>
 
-                                    <ul>
-                                        <li class="wow fadeInUp li-svg" data-wow-delay="0.2s">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                fill="currentColor" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                                            </svg>
-                                        </li>
+                  <ul>
+                    <li class="wow fadeInUp li-svg" data-wow-delay="0.2s">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                        />
+                      </svg>
+                    </li>
 
-                                        <li class="wow fadeInUp li-svg" data-wow-delay="0.4s">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                fill="currentColor" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-                                                </path>
-                                            </svg>
-                                        </li>
-                                        <!-- <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">fb</li>
+                    <li class="wow fadeInUp li-svg" data-wow-delay="0.4s">
+                      <a
+                        href="https://github.com/parthasarathi-mvn"
+                        style="text-decoration: none; color: inherit"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          fill="currentColor"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <!-- <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">fb</li>
                                     <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">ig</li>
                                     <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">tw</li>
                                     <li id="yt" class="wow fadeInUp" data-wow-delay="1s">yt</li> -->
-                                    </ul>
+                  </ul>
 
-                                    <br><br>
-                                </div>
-
-                                <div class="col-lg-10" id="address">
-                                    <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-                                    <h4 class="wow fadeInUp" data-wow-delay="0.2s">mvnparthasarathi@gmail.com</h4>
-                                    <br><br>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <br /><br />
                 </div>
 
-                <br><br><br><br>
-
+                <div class="col-lg-10" id="address">
+                  <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+                  <h4 class="wow fadeInUp" data-wow-delay="0.2s">
+                    <a
+                      style="text-decoration: none; color: inherit"
+                      href="mailto:mvnparthasarathi@gmail.com"
+                      >mvnparthasarathi@gmail.com
+                    </a>
+                  </h4>
+                  <br /><br />
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
 
+        <br /><br /><br /><br />
+      </div>
+    </div>
 
-        <!-- greensock cdn -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- greensock cdn -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
 
-        <script type="text/javascript">
-            // navigation starts here
-            $("#toggle").click(function () {
-                $(this).toggleClass('on');
-                $("#resize").toggleClass("active");
-            });
-            $("#resize ul li a").click(function () {
-                $(this).toggleClass('on');
-                $("#resize").toggleClass("active");
-            });
-            $(".close-btn").click(function () {
-                $(this).toggleClass('on');
-                $("#resize").toggleClass("active");
-            });
-            // navigation ends here
-            // nav animation
-            TweenMax.from("#brand", 1, {
-                delay: 0.4,
-                y: 10,
-                opacity: 0,
-                ease: Expo.easeInOut
-            })
-            TweenMax.staggerFrom("#menu li a", 1, {
-                delay: 0.4,
-                opacity: 0,
-                ease: Expo.easeInOut
-            }, 0.1);
-            // nav animation ends
-            new WOW().init();
-        </script>
+    <script type="text/javascript">
+      // navigation starts here
+      $("#toggle").click(function () {
+        $(this).toggleClass("on");
+        $("#resize").toggleClass("active");
+      });
+      $("#resize ul li a").click(function () {
+        $(this).toggleClass("on");
+        $("#resize").toggleClass("active");
+      });
+      $(".close-btn").click(function () {
+        $(this).toggleClass("on");
+        $("#resize").toggleClass("active");
+      });
+      // navigation ends here
+      // nav animation
+      TweenMax.from("#brand", 1, {
+        delay: 0.4,
+        y: 10,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.staggerFrom(
+        "#menu li a",
+        1,
+        {
+          delay: 0.4,
+          opacity: 0,
+          ease: Expo.easeInOut,
+        },
+        0.1
+      );
+      // nav animation ends
+      new WOW().init();
+    </script>
 
+    <!-- JS for glowball behind cursor -->
+    <script>
+      const ball = document.querySelector("div.ball");
 
-        <!-- JS for glowball behind cursor -->
-        <script>
-            const ball = document.querySelector("div.ball");
+      let mouseX = 0;
+      let mouseY = 0;
 
-            let mouseX = 0;
-            let mouseY = 0;
+      let ballX = 0;
+      let ballY = 0;
 
-            let ballX = 0;
-            let ballY = 0;
+      let speed = 0.2;
 
-            let speed = 0.2;
+      function animate() {
+        let distX = mouseX - ballX;
+        let distY = mouseY - ballY;
 
+        ballX = ballX + distX * speed;
+        ballY = ballY + distY * speed;
 
-            function animate() {
+        ball.style.left = ballX + "px";
+        ball.style.top = ballY + "px";
 
-                let distX = mouseX - ballX;
-                let distY = mouseY - ballY;
+        requestAnimationFrame(animate);
+      }
+      animate();
 
+      document.addEventListener("mousemove", function (event) {
+        mouseX = event.pageX;
+        mouseY = event.pageY;
+        console.log(mouseX + " mouse x");
+        console.log(mouseY + " mouse y");
+      });
+    </script>
 
-                ballX = ballX + (distX * speed);
-                ballY = ballY + (distY * speed);
+    <script>
+      function myFunction() {
+        const elements = document.getElementsByClassName("theme");
 
-                ball.style.left = ballX + "px";
-                ball.style.top = ballY + "px";
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].classList.toggle("light");
+        }
 
-                requestAnimationFrame(animate);
-            }
-            animate();
+        console.log(elements + "ssss");
+      }
+    </script>
 
-            document.addEventListener("mousemove", function (event) {
-                mouseX = event.pageX;
-                mouseY = event.pageY;
-                console.log(mouseX + " mouse x");
-                console.log(mouseY + " mouse y");
-            })
-        </script>
+    <script>
+      function myFunction1() {
+        const button = document.getElementById("button-id");
 
-    </div>
-
+        button.classList.toggle("light");
+      }
+    </script>
+  </div>
 </body>
