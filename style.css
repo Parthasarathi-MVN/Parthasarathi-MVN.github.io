@@ -284,7 +284,7 @@ nav #menu li a:hover {
 
 /*--------------- hero section --------------- */
 .hero {
-  height: 88vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -558,15 +558,17 @@ div.ball {
 /* For toggle button  */
 
 body.light {
-  background-color: antiquewhite !important;
+  background-color: rgb(220, 250, 215) !important;
   color: black !important;
 
   /* to smooth transtition of theme change */
   transition: 1s;
 }
 
+/* nav #menu li a */
 nav.light {
-  background-color: wheat !important;
+  background-color: rgb(181, 245, 179) !important;
+  color: black !important;
 
   /* to smooth transtition of theme change */
   transition: 1s;
@@ -583,8 +585,8 @@ nav.light {
 
 button,
 button.dark {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border: none;
   outline: none;
 
@@ -612,4 +614,11 @@ button.light {
 button.light:hover {
   background-image: url("/assets/moon-color.svg");
   cursor: pointer;
+}
+
+/* end toggle button here  */
+
+div.scroll-down.light {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
 }
