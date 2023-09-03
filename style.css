@@ -27,6 +27,11 @@ body {
   background: rgb(111, 194, 136);
 }
 
+/* body.light::selection {
+  color: #add8e6 !important;
+  background: #00008b !important;
+} */
+
 .whitespace {
   width: 100%;
   height: 150px;
@@ -59,6 +64,13 @@ body {
 
 .anim-typewriter:hover {
   color: aquamarine;
+  /* text-shadow: 0px 0px 0px rgb(237, 95, 119); */
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.anim-typewriter.light:hover {
+  color: #00008b;
   /* text-shadow: 0px 0px 0px rgb(237, 95, 119); */
   font-weight: 500;
   cursor: pointer;
@@ -101,6 +113,16 @@ body {
 .tagline {
   color: rgb(127, 255, 212);
   animation: tagline-display 4s 4s both;
+
+  /* for chaning theme time  */
+  transition: 1s;
+}
+
+.tagline.light {
+  color: #00008b;
+
+  /* for chaning theme time  */
+  transition: 1s;
 }
 
 @keyframes tagline-display {
@@ -502,6 +524,17 @@ h6 {
   color: black;
 }
 
+div.chip-div > p:hover {
+  /* box-shadow: 0px 0px 20px rgb(40, 134, 205);
+    background-color: rgb(85, 172, 238); */
+
+  box-shadow: 0px 0px 20px rgb(76, 96, 246);
+  background-color: #00008bad;
+  transform: scale(1.05);
+  transition: 0.08s;
+  color: black;
+}
+
 .chip-div {
   width: 55%;
   margin: auto;
@@ -561,7 +594,7 @@ div.ball {
 /* For toggle button  */
 
 body.light {
-  background-color: rgb(220, 250, 215) !important;
+  background-color: #add8e6 !important;
   color: black !important;
 
   /* to smooth transtition of theme change */
@@ -570,7 +603,7 @@ body.light {
 
 /* nav #menu li a */
 nav.light {
-  background-color: rgb(181, 245, 179) !important;
+  background-color: #8fcee3 !important;
   color: black !important;
 
   /* to smooth transtition of theme change */
@@ -626,9 +659,17 @@ div.scroll-down.light {
   border-right: 2px solid black;
 }
 
+/* for logos of github and linkedin */
 li.light {
   color: black;
 }
+
+.li-svg:hover {
+  color: #0808b7;
+  cursor: pointer;
+  transition: color 0.7s;
+}
+/* end here */
 
 div.vertical.light {
   border-left: 1px solid black;
@@ -637,8 +678,24 @@ div.vertical.light {
   transition: 1s;
 }
 
-a.light {
+/* for navbar hyperlinks  */
+nav #menu a.light {
   color: black !important;
+  font-weight: 400;
+}
+nav #brand a.light {
+  color: black !important;
+}
+/* end here  */
+
+nav #menu a.light:hover {
+  color: #00008b !important;
+  text-shadow: 0px 0px 10px rgba(76, 96, 246, 0.819);
+}
+
+nav #brand a.light:hover {
+  color: #00008b !important;
+  text-shadow: 0px 0px 10px rgba(76, 96, 246, 0.819);
 }
 
 div.ball.light {
@@ -648,12 +705,12 @@ div.ball.light {
   background-color: transparent;
   background-image: radial-gradient(
     circle,
-    rgba(59, 74, 4, 0.651) 0%,
+    rgba(74, 4, 4, 0.651) 0%,
     rgba(15, 15, 15, 0) 70%
   );
   background-image: -moz-radial-gradient(
     circle,
-    rgba(59, 74, 4, 0.651) 0%,
+    rgba(74, 4, 4, 0.651) 0%,
     rgba(15, 15, 15, 0) 70%
   );
 
