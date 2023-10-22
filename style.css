@@ -27,6 +27,11 @@ body {
   background: rgb(111, 194, 136);
 }
 
+.light ::selection {
+  color: rgb(3, 13, 87);
+  background: rgb(118, 114, 242);
+}
+
 /* body.light::selection {
   color: #add8e6 !important;
   background: #00008b !important;
@@ -166,6 +171,9 @@ nav #menu {
   float: left;
   right: 80px;
   position: fixed;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 nav #menu li {
@@ -513,12 +521,16 @@ h6 {
   cursor: default;
 }
 
-.chip:hover {
+body.light .chip {
+  background-color: skyblue;
+}
+
+body.light div.chip-div > p:hover {
   /* box-shadow: 0px 0px 20px rgb(40, 134, 205);
     background-color: rgb(85, 172, 238); */
 
-  box-shadow: 0px 0px 20px rgb(40, 205, 169);
-  background-color: aquamarine;
+  box-shadow: 0px 0px 20px rgb(76, 96, 246);
+  background-color: #0e0eb2ad;
   transform: scale(1.05);
   transition: 0.08s;
   color: black;
@@ -528,8 +540,8 @@ div.chip-div > p:hover {
   /* box-shadow: 0px 0px 20px rgb(40, 134, 205);
     background-color: rgb(85, 172, 238); */
 
-  box-shadow: 0px 0px 20px rgb(76, 96, 246);
-  background-color: #00008bad;
+  box-shadow: 0px 0px 20px rgb(40, 205, 169);
+  background-color: aquamarine;
   transform: scale(1.05);
   transition: 0.08s;
   color: black;
