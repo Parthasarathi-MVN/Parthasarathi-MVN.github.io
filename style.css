@@ -416,6 +416,11 @@ h6 {
   height: 1px;
 }
 
+.hr.light {
+  background: rgba(17, 15, 136, 0.623);
+  height: 1px;
+}
+
 .info h4 {
   font-size: 18px;
   font-weight: light;
@@ -603,6 +608,17 @@ div.ball {
   transition: color 0.7s;
 }
 
+/* for logos of github and linkedin */
+li.light {
+  color: black;
+}
+
+li.light:hover {
+  color: #0808b7;
+  cursor: pointer;
+  transition: color 0.7s;
+}
+
 /* For toggle button  */
 
 body.light {
@@ -671,16 +687,6 @@ div.scroll-down.light {
   border-right: 2px solid black;
 }
 
-/* for logos of github and linkedin */
-li.light {
-  color: black;
-}
-
-.li-svg:hover {
-  color: #0808b7;
-  cursor: pointer;
-  transition: color 0.7s;
-}
 /* end here */
 
 div.vertical.light {
